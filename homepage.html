@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Babylon Cafe | Homepage</title>
+    <link rel="stylesheet" href="homepagestyles.css">
+	<?php
+    session_start();
+    // Ensure the user is logged in and their name is set in the session
+    if (!isset($_SESSION['username'])) {
+        header("Location: login.html");
+        exit();
+    }
+    $username = $_SESSION['username'];
+    ?>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="logo.webp" alt="Babylon Cafe Logo" class="logo">
+            <h1 class="slogan">Come for the food, stay for the vibes</h1>
+            <a href="bookatable.html" class="cta-button">Book a Table</a>
+        </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="about" id="about">
+        <h2>About Babylon Cafe</h2>
+        <p>Babylon Cafe is the perfect blend of exotic flavors and a relaxing ambiance. Whether you're here for our signature dishes, a cozy hangout, or a memorable event, we have something special for everyone.</p>
+    </section>
+
+    <!-- Featured Dishes Section -->
+    <section class="featured-dishes">
+        <h2>Our Featured Dishes</h2>
+        <div class="dishes-container">
+            <div class="dish">
+                <img src="dish1.jpg" alt="Dish 1">
+                <h3>Grilled Kebabs</h3>
+            </div>
+            <div class="dish">
+                <img src="dish2.jpg" alt="Dish 2">
+                <h3>Lamb Biryani</h3>
+            </div>
+            <div class="dish">
+                <img src="dish3.jpg" alt="Dish 3">
+                <h3>Chicken Shawarma</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Explore Our Ambiance</h2>
+        <div class="gallery-container">
+            <img src="gallery1.jpg" alt="Gallery Image 1">
+            <img src="gallery2.jpg" alt="Gallery Image 2">
+            <img src="gallery3.jpg" alt="Gallery Image 3">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 123 Babylon Street, City Name, Country</p>
+        <p>Phone: +123-456-7890</p>
+        <div class="social-links">
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">Instagram</a>
+            <a href="#" class="social-icon">Twitter</a>
+        </div>
+    </section>
+</body>
+</html>

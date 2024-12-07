@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+    background-color: #332a14; /* Default fallback color similar to gold hues */
+}
+
+.background-container {
+    background: url('backgroundimage.webp') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 120px;
+}
+
+.login-form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: showForm 1.5s forwards 1s;
+    color: #FFD700;
+    text-align: center;
+    width: 300px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #FFD700;
+    font-family: 'Georgia', serif;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    background: #fff;
+    color: black;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #FFD700;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #f4c430;
+}
+
+@keyframes showForm {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Desktop and Larger Screens */
+@media (min-width: 1024px) {
+    .background-container {
+        background-attachment: fixed;
+        background-position: center top;
+        background-color: #4a3b20; /* Set a darker golden-brown hue for larger screens */
+    }
+    
+    .overlay {
+        padding-bottom: 150px;
+    }
+
+    .login-form {
+        width: 350px;
+        padding: 40px 60px;
+    }
+}
+
+/* Media Queries for Ultra-Wide Screens */
+@media (min-width: 1440px) {
+    .background-container {
+        background-size: contain;
+        background-color: #4a3b20; /* Maintain the golden-brown hue for ultra-wide screens */
+    }
+
+    .overlay {
+        padding-bottom: 200px;
+    }
+
+    .login-form {
+        width: 400px;
+    }
+}

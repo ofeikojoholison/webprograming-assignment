@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background: url('backgroundimage.webp') center center no-repeat;
+    background-size: cover;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* Header Section */
+.signup-header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.signup-header .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-header .logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.signup-header h1 {
+    font-size: 32px;
+    color: #FFD700;
+}
+
+/* Sign-Up Form Section */
+.signup-form {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin: 50px auto;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.signup-form h2 {
+    font-size: 28px;
+    color: #FFD700;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #FFD700;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-group input:focus {
+    outline: none;
+    border: 1px solid #FFD700;
+}
+
+/* Separate Terms Section */
+.terms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px; /* Add some space below the terms section */
+}
+
+.terms input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.terms a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    color: #e6c200;
+}
+
+.signup-btn {
+    padding: 15px 30px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #e6c200;
+    transform: translateY(-3px);
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+    color: #e6c200;
+}

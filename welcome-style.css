@@ -1,0 +1,55 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header Section */
+.welcome-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    margin-bottom: 2em;
+}
+
+.welcome-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.welcome-header p {
+    font-size: 1.2em;
+    margin: 0.5em 0 0;
+}
+
+/* Content Section */
+.welcome-content {
+    text-align: center;
+    padding: 1em;
+}
+
+.welcome-content p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+/* Buttons */
+.actions .button {
+    display: inline-block;
+    margin: 0 1em;
+    padding: 0.8em 1.5em;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.actions .button:hover {
+    background-color: #0056b3;
+}
